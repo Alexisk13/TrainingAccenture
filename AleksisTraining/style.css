@@ -29,7 +29,7 @@ header {
 }
 .section {
     width: 30%;
-    height: 100vh;
+    height: 90vh;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
@@ -41,9 +41,9 @@ header {
     float: left; 
 }
 .section-title {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 30px;
     margin-bottom: 10px;
+    font-weight: lighter;
 }
 .info-label {
     font-weight: bold;
@@ -57,7 +57,7 @@ header {
 .new-section {
     width: 70%;
     padding-left: 20px;
-    height: 100vh;
+    height: 90vh;
     padding-right: 20px;
     padding-top: 20px;
     border-top: 1px solid #ccc;
@@ -68,7 +68,7 @@ header {
     float: left; 
 }
 
-.work-experiences{
+.list-item-caption{
     font-weight: bold;
     font-size: large;
 }
@@ -80,4 +80,40 @@ header {
 .time-frame{
     text-align: center;
     font-weight: lighter;
+}
+
+.list-item{
+    font-size: large;
+}
+
+.digital-skill-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+}
+
+.digital-skill-list h3{
+    flex-basis: 100%;
+}
+
+.digital-skill-list li:not(:last-child)::after{
+    content: " | ";
+}
+
+.Additional-info-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+}
+
+.Additional-info-list h3{
+    flex-basis: 100%;
+}
+
+.Additional-info-list li:not(:last-child)::after{
+    content: " | ";
 }
